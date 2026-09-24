@@ -10,4 +10,6 @@ test('test', async ({ page }) => {
     await Login.password_function('SuperSecretPassword!')
     await Login.login_function()
 
+    await page.close();
+
 });
